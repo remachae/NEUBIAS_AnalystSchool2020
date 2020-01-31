@@ -42,3 +42,17 @@ Collection: ImageJ, Fiji, MorphoLibJ, R, shiny
 Components Used: Marker controlled watershed, 
 laplacian of gaussian,
 morphological gradients
+
+## Quantification of the deformation of pericardium
+
+**Elena Remacha**
+
+[PhD Candidate - Mechano-genetic interplays and embryonic morphogenesis, IGBMC Strasbourg, France](http://www.igbmc.fr/vermot/)
+
+Epicardium in the zebrafish is formed by a pool of cells that cluster and detach from the pericardial wall. To understand the role of mechanical forces on this process, we want to assess the stretching of the pericardium in the region where the cluster forms.
+
+I use a spinning disk confocal to acquire 2D+t stacks of both the nuclei and the actin of the cells in the pericardium. Post acquisition, I reconstruct them into a 3D+t beating heart. After this point I have two different pipelines, one for the actin signal and one for the nuclei. For the actin, I create a mask to exclude signal coming from the heart and detect the pericardial wall automatically and follow it during the heartbeat. For the actin, I use Imaris to track the nuclei and then calculate the relative distances between them.
+
+### Collections and Components 
+
+Collection: ImageJ, Matlab, Imaris 
